@@ -1,0 +1,9 @@
+table{width:1000px;}
+input[type="checkbox"]{
+			width:19px;
+			height:19px;
+			cursor:pointer;
+			position:relative;
+			left: 2px;
+			top: 8px;
+			}

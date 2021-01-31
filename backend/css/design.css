@@ -1,0 +1,56 @@
+header .sub_page{
+		position:relative;
+		width: 131%;
+		left: -31%;
+		height:116px;
+		background:url('../../img/banner/slice.png');
+		background-size:100% 100%;
+		border-bottom:4px solid #666;
+ 
+  }
+header .logo{
+		position:absolute;
+		top: 15px;
+		height: 85px;
+		left: 34%;
+}
+
+/****  HEADER  ****/
+ul#menu, ul#menu ul.sub-menu {
+		padding:0;
+		margin: 0;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+		list-style-type: none;
+		display: inline-block;
+}
+ul#menu li a, ul#menu li ul.sub-menu li a {
+		text-decoration: none;
+		color: #fff;
+		background: #666;
+		padding: 5px;
+		display:inline-block;
+		width:188px;
+}
+ul#menu li {
+		position: relative;
+}
+ul#menu li ul.sub-menu {
+		display:none;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: 120px;
+}
+ul#menu li:hover ul.sub-menu {
+		display:block;
+}
+a:hover{opacity:0.5
+}
+
+.select-action{width:100px;}
+
+
+
+
+

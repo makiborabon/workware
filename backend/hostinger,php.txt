@@ -1,0 +1,10 @@
+stocks-inventory.url.ph
+
+u290122719_makii set to POTA16432513
+u290122719
+
+
+HOST: mysql.hostinger.ph
+U : u290122719_makii
+P: POTA16432513
+DB : u290122719_inven

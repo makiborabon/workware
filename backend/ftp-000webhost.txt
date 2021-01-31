@@ -1,0 +1,7 @@
+a9354312 username
+POTA16432513 password
+
+$mysql_host = "mysql4.000webhost.com";
+$mysql_database = "a9354312_record";
+$mysql_user = "a9354312_markii";
+$mysql_password = "POTA16432513";

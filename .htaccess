@@ -1,0 +1,13 @@
+# BEGIN e-project.hol.es
+Options -MultiViews
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /http://e-project.hol.es/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /http://e-project.hol.es/index.php [L]
+ErrorDocument 404 /404.php
+</IfModule>
+
+# END e-project.hol.es

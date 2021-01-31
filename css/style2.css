@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:white;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color: #fff;
+	overflow-x:hidden;
+}
+.oe_wrapper ul.hover img{opacity:0;}
+.bg{  width:175%; height:44px; background: url('../img/slice_nav.png'); border-top: 2px solid red; position: relative; left: -36%; top: 40px;}
+.bg img{position:relative; left:25%; margin:auto;top:8px;}
+.oe_wrapper{position:relative; top:-70px; margin-left:auto; margin-right:auto; left:29.5%;}
+.//oe_overlay{
+	background:#000;
+	opacity:0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+ul.oe_menu{
+	list-style:none;
+	position:relative;
+	margin:40px 0px 0px -26px;
+
+	float:left;
+	clear:both;
+	
+}
+ul.oe_menu > li{
+	width:110px;
+	height:45px;
+	padding-bottom:0px;
+	float:left;
+	position:relative;
+	padding-top:3px;
+
+	background: url('../img/nav-sep.png') no-repeat;
+}
+ul.oe_menu > li{color:red;}
+ul.oe_menu > li > a{
+	display:block;
+	text-decoration:none;
+	font: normal 0.7em sans-serif, Arial, Helvetica;
+	font-size:14px;
+	width:60px;
+	height:15px;
+	padding:10px;
+	margin:1px;
+	color:white;
+}
+ul.oe_menu > li > a:hover,
+ul.oe_menu > li.selected > a{
+	background:white;
+	color:black;
+	font-weight:bold;
+	opacity:1.0;
+
+}
+.oe_wrapper ul.hovered > li > a{
+	width: 100%;
+	height: 110%;
+	border-radius:8px 8px 0px 0px;
+	
+}
+
+ul.oe_menu div{
+	position:absolute;
+	top:50px;
+	left:1px;
+	background:#FAFAFA;
+	width:600px;
+	height:180px;
+	padding:25px;
+	display:none;
+	border-radius:0px 8px 8px 8px;
+
+}
+ul.oe_menu div ul li a{
+	text-decoration:none;
+	color:#222;
+	padding:2px 2px 2px 4px;
+	margin:2px;
+	display:block;
+	font-size:12px;
+
+	
+
+}
+ul.oe_menu div ul.oe_full{
+	width:100%;
+}
+ul.oe_menu div ul li a:hover{
+	color:#CCC;
+	text-decoration:underline;
+	text-transform:uppercase;
+}
+ul.oe_menu li ul{
+	list-style:none;
+	float:left;
+	width: 150px;
+	margin-right:10px;
+}
+li.oe_heading{
+	color:red;
+	font-size:14px;
+	border-bottom:2px solid #ddd;
+}
+
+
+footer{margin-bottom:20px;}
+
+
+
+
+
+
+

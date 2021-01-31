@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Upload multiple images jQuery Ajax using PHP | PGPGang.com</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style type="text/css">
+      img {border-width: 0}
+      * {font-family:'Lucida Grande', sans-serif;}
+    </style>
+    <link href="css/uploadfilemulti.css" rel="stylesheet">
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/jquery.fileuploadmulti.min.js"></script>
+
+  </head>
+  <body>
+ <center>    
+<div id="mulitplefileuploader">Upload</div>
+
+<div id="status"></div>
+<div><p><input type="text" id="SKU" name="SKU" maxlength="15" placeholder="SKU"/><span id="user-result"></span></div></p></div>
+</center>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#SKU").keyup(function (e) {
+	
+		//removes spaces from SKU
+		$(this).val($(this).val().replace(/\s/g, ''));
+		
+		var SKU = $(this).val();
+		if(SKU.length < 4){$("#user-result").html('');return false;}
+		
+		if(SKU.length >= 4){
+			$("#user-result").html('<img src="../img/ajax-loader.gif" />');
+			$.post('../SKU-ajax.php', {'SKU':SKU}, function(data) {
+			  $("#user-result").html(data);
+			  return false;
+			});
+		}
+	});	
+});
+</script>
+
+<script>
+
+$(document).ready(function()
+{
+
+var settings = {
+	url: "upload.php",
+	method: "POST",
+	allowedTypes:"jpg,png,gif,doc,pdf,zip",
+	fileName: "myfile",
+	multiple: true,
+	onSuccess:function(files,data,xhr)
+	{
+		$("#status").html("<font color='green'>Upload is success</font>");
+		
+	},
+    afterUploadAll:function()
+    {
+        alert("all images uploaded!!");
+    },
+	onError: function(files,status,errMsg)
+	{		
+		$("#status").html("<font color='red'>Upload is Failed</font>");
+	}
+}
+$("#mulitplefileuploader").uploadFile(settings);
+
+});
+</script>
+</body>
+</html>
